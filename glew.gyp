@@ -18,7 +18,7 @@
           'type': 'none',
           'link_settings': {
             'libraries': [
-              '-lglew',
+              '-lGLEW',
             ],
           },
         }, # target
