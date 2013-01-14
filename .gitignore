@@ -1,6 +1,13 @@
+# linux
+*.Makefile
+*.target.mk
+
+# vc
 *.sln
 *.vcproj
 *.user
 
+# configuration
 Debug/
 Release/
+
