@@ -1,6 +1,8 @@
 # Copyright cybertk. kyan.ql.he@gmail.com
 {
   'variables': {
+    'glew_version' : '1.5.7',
+
     'conditions': [
       ['OS == "linux"', {
         'use_system_glew': 1,
@@ -32,7 +34,7 @@
 
           'direct_dependent_settings': {
             'include_dirs': [
-              'files/glew-1.9.0/include',
+              'files/glew-<(glew_version)/include',
             ],
             'defines': [
               'GLEW_STATIC',
@@ -51,11 +53,11 @@
           }, # msvs_settings
 
           'include_dirs': [
-            'files/glew-1.9.0/include',
+            'files/glew-<(glew_version)/include',
           ],
 
           'sources': [
-            'files/glew-1.9.0/src/glew.c',
+            'files/glew-<(glew_version)/src/glew.c',
             #'files/glew-1.9.0/src/glewinfo.c',
             #'files/glew-1.9.0/src/visualinfo.c',
           ], # sources
